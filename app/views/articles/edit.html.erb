@@ -1,0 +1,15 @@
+<dic class="container">
+  <h1>Edit an Article</h1>
+
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+
+    <%= f.label :content %>
+    <%= f.text_area :content, class: "form-control" %>
+
+    <div>
+      <%= f.submit%>
+    </div>
+  <% end %>
+</dic>

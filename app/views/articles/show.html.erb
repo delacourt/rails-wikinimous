@@ -1,0 +1,13 @@
+<div class="container show">
+  <h1><%= @article.title %></h1>
+  <div class="actions">
+    <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, article_path(@article),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
+    <%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_article_path(@article) %>
+
+  </div>
+
+  <p><%= @article.content.html_safe %></p>
+
+</div>
